@@ -34,4 +34,8 @@ function UILibrary.Notify(Text, Durartion, TweenSpeed)
 	Background:TweenPosition(UDim2.new(0.105,0,0.92,0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce, TweenSpeed, true)
 	wait(Durartion)
 	Background:TweenPosition(UDim2.new(-0.105,0,0.92,0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce, TweenSpeed, true)
+	wait(TweenSpeed)
+	Notification:Destroy()
 end
+
+return UILibrary
